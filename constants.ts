@@ -133,7 +133,7 @@ export const PRESS_PORTFOLIO: PressItem[] = [
     platform: "Website/Tv station/Newspaper",
     date: "October 2023",
     type: "press-release",
-    link: "",
+    link: "https://charterhouselagos-my.sharepoint.com/:w:/p/may_nwokoro/IQDYhjAarqfxS5xu6U8lVC-fAXDuDoWG9fLDHOhMiolPRE4?e=qc2hbG",
   },
   {
     id: 2,

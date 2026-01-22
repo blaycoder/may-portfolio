@@ -9,6 +9,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import { PERSONAL_INFO } from "../constants";
+import Swal from 'sweetalert2'
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({
@@ -37,7 +38,24 @@ const [result, setResult] = useState("");
     const data = await response.json();
     setResult(data.success ? "Success!" : "Error");
     setIsSubmitting(false);
-    
+    if(data.success) {
+      setFormState({
+        name: "",
+        email: "",
+        message: "",
+      });
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully",
+        icon: "success",
+      });
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "Failed to send message",
+        icon: "error",
+      });
+    }
   };
   return (
     <section
@@ -207,7 +225,6 @@ const [result, setResult] = useState("");
                 )}
               </button>
             </form>
-             <p>{result}</p>
           </div>
         </div>
       </div>
