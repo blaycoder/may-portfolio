@@ -70,7 +70,7 @@ const PressPortfolio: React.FC = () => {
   }, []);
 
   return (
-    <section id="press" ref={sectionRef} className="py-24 bg-background border-t border-white/5">
+    <section id="press" ref={sectionRef} className="py-24 bg-background border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-4">Press & Media</h2>
@@ -92,7 +92,7 @@ const PressPortfolio: React.FC = () => {
               {pressReleases.map((item) => (
                 <div
                   key={item.id}
-                  className="press-card bg-surface p-6 rounded-2xl border border-white/5 hover:border-primary/30 transition-all duration-300 group"
+                  className="press-card bg-surface p-6 rounded-2xl border border-gray-200 hover:border-primary/30 transition-all duration-300 group"
                 >
                   <div className="mb-4">
                     <span className="text-xs font-bold text-primary uppercase tracking-wider bg-primary/10 px-3 py-1 rounded-full">
@@ -103,11 +103,11 @@ const PressPortfolio: React.FC = () => {
                     {item.title}
                   </h4>
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-sm text-slate-400">
+                    <div className="flex items-center text-sm text-muted">
                       <span className="font-medium mr-2">Platform:</span>
                       <span>{item.platform}</span>
                     </div>
-                    <div className="flex items-center text-sm text-slate-400">
+                    <div className="flex items-center text-sm text-muted">
                       <span className="font-medium mr-2">Date:</span>
                       <span>{item.date}</span>
                     </div>
@@ -153,11 +153,11 @@ const PressPortfolio: React.FC = () => {
                     {item.title}
                   </h4>
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-sm text-slate-400">
+                    <div className="flex items-center text-sm text-muted">
                       <span className="font-medium mr-2">Platform:</span>
                       <span>{item.platform}</span>
                     </div>
-                    <div className="flex items-center text-sm text-slate-400">
+                    <div className="flex items-center text-sm text-muted">
                       <span className="font-medium mr-2">Date:</span>
                       <span>{item.date}</span>
                     </div>

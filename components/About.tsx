@@ -33,12 +33,12 @@ const About: React.FC = () => {
           <div className="about-reveal w-16 h-1.5 bg-primary mx-auto rounded-full"></div>
         </div>
 
-        <div className="about-reveal bg-surface p-8 md:p-12 rounded-3xl border border-white/5 shadow-xl">
-          <p className="text-xl text-slate-300 leading-relaxed mb-10 font-light text-center md:text-left">
+        <div className="about-reveal bg-surface p-8 md:p-12 rounded-3xl border border-gray-200 shadow-xl">
+          <p className="text-xl text-secondary leading-relaxed mb-10 font-light text-center md:text-left">
             {PERSONAL_INFO.bio}
           </p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-white/5 mb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-gray-200 mb-10">
             <div className="flex flex-col text-center md:text-left">
               <span className="text-muted uppercase tracking-wider text-xs font-bold mb-2">Email</span>
               <a href={`mailto:${PERSONAL_INFO.email}`} className="font-medium text-secondary break-words hover:text-primary transition-colors">{PERSONAL_INFO.email}</a>
@@ -58,15 +58,15 @@ const About: React.FC = () => {
           </div>
 
           {/* Key Competencies */}
-          <div className="pt-8 border-t border-white/5">
+          <div className="pt-8 border-t border-gray-200">
             <h3 className="text-2xl font-heading font-bold text-secondary mb-6">Key Competencies</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {SKILLS.map((category, idx) => (
-                <div key={idx} className="bg-background/50 p-6 rounded-xl border border-white/5">
+                <div key={idx} className="bg-gray-50 p-6 rounded-xl border border-gray-200">
                   <h4 className="text-lg font-bold text-secondary mb-3">{category.category}</h4>
                   <ul className="space-y-2">
                     {category.skills.map((skill, skillIdx) => (
-                      <li key={skillIdx} className="text-slate-400 text-sm flex items-start">
+                      <li key={skillIdx} className="text-muted text-sm flex items-start">
                         <span className="text-primary mr-2">•</span>
                         <span>{skill}</span>
                       </li>

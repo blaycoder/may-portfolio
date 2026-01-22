@@ -12,13 +12,13 @@
       theme: {
         extend: {
           colors: {
-            background: '#0f172a', // Slate 900
-            surface: '#1e293b', // Slate 800
-            primary: '#6366f1', // Indigo 500
-            primaryDark: '#4338ca', // Indigo 700
-            secondary: '#f8fafc', // Slate 50 (Text)
-            muted: '#94a3b8', // Slate 400
-            accent: '#2dd4bf', // Teal 400
+            background: '#ffffff', // White
+            surface: '#f8f9fa', // Light gray for cards/surfaces
+            primary: '#800020', // Burgundy
+            primaryDark: '#5c0017', // Darker burgundy for hover states
+            secondary: '#1a1a1a', // Dark text on white background
+            muted: '#6b7280', // Gray for secondary text
+            accent: '#800020', // Burgundy accent
           },
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
@@ -36,8 +36,8 @@
   <style>
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      background-color: #0f172a;
-      color: #f8fafc;
+      background-color: #ffffff;
+      color: #1a1a1a;
     }
 
     h1,
@@ -55,16 +55,16 @@
     }
 
     ::-webkit-scrollbar-track {
-      background: #0f172a;
+      background: #f1f1f1;
     }
 
     ::-webkit-scrollbar-thumb {
-      background: #334155;
+      background: #800020;
       border-radius: 4px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: #475569;
+      background: #5c0017;
     }
   </style>
   <script type="importmap">

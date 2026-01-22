@@ -3,7 +3,7 @@ import { PERSONAL_INFO } from '../constants';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-background py-10 border-t border-white/5">
+    <footer className="bg-background py-10 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-muted text-sm font-medium">
           &copy; {new Date().getFullYear()}{" "}

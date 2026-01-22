@@ -60,7 +60,7 @@ const [result, setResult] = useState("");
   return (
     <section
       id="contact"
-      className="py-24 bg-background border-t border-white/5"
+      className="py-24 bg-background border-t border-gray-200"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -69,13 +69,13 @@ const [result, setResult] = useState("");
             <h2 className="font-heading text-4xl md:text-6xl font-bold text-secondary mb-8 leading-tight">
               Let's work <span className="text-primary">together</span>.
             </h2>
-            <p className="text-slate-400 text-lg mb-12 leading-relaxed max-w-lg">
+            <p className="text-muted text-lg mb-12 leading-relaxed max-w-lg">
               I'm open to new opportunities in Corporate Communications, Media Relations, and Content Strategy. Whether you have a project, collaboration idea, or just want to connect, I'd love to hear from you.
             </p>
 
             <div className="space-y-8">
               <div className="flex items-center space-x-5 group">
-                <div className="p-4 bg-surface border border-white/10 rounded-2xl text-primary group-hover:text-white group-hover:bg-primary transition-all duration-300">
+                <div className="p-4 bg-surface border border-gray-200 rounded-2xl text-primary group-hover:text-white group-hover:bg-primary transition-all duration-300">
                   <Mail size={24} />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ const [result, setResult] = useState("");
               </div>
 
               <div className="flex items-center space-x-5 group">
-                <div className="p-4 bg-surface border border-white/10 rounded-2xl text-primary group-hover:text-white group-hover:bg-primary transition-all duration-300">
+                <div className="p-4 bg-surface border border-gray-200 rounded-2xl text-primary group-hover:text-white group-hover:bg-primary transition-all duration-300">
                   <Phone size={24} />
                 </div>
                 <div>
@@ -109,7 +109,7 @@ const [result, setResult] = useState("");
               </div>
 
               <div className="flex items-center space-x-5 group">
-                <div className="p-4 bg-surface border border-white/10 rounded-2xl text-primary group-hover:text-white group-hover:bg-primary transition-all duration-300">
+                <div className="p-4 bg-surface border border-gray-200 rounded-2xl text-primary group-hover:text-white group-hover:bg-primary transition-all duration-300">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -125,7 +125,7 @@ const [result, setResult] = useState("");
           </div>
 
           {/* Contact Form */}
-          <div className="bg-surface p-8 md:p-10 rounded-3xl border border-white/5 shadow-2xl">
+          <div className="bg-surface p-8 md:p-10 rounded-3xl border border-gray-200 shadow-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               {status && (
                 <div
@@ -160,7 +160,7 @@ const [result, setResult] = useState("");
                   onChange={(e) =>
                     setFormState({ ...formState, name: e.target.value })
                   }
-                  className="w-full px-5 py-4 rounded-xl bg-background border border-white/10 text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-600"
+                  className="w-full px-5 py-4 rounded-xl bg-background border border-gray-300 text-secondary focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-400"
                   placeholder="John Doe"
                   disabled={isSubmitting}
                 />
@@ -181,7 +181,7 @@ const [result, setResult] = useState("");
                   onChange={(e) =>
                     setFormState({ ...formState, email: e.target.value })
                   }
-                  className="w-full px-5 py-4 rounded-xl bg-background border border-white/10 text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-slate-600"
+                  className="w-full px-5 py-4 rounded-xl bg-background border border-gray-300 text-secondary focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-400"
                   placeholder="john@example.com"
                   disabled={isSubmitting}
                 />
@@ -202,7 +202,7 @@ const [result, setResult] = useState("");
                   onChange={(e) =>
                     setFormState({ ...formState, message: e.target.value })
                   }
-                  className="w-full px-5 py-4 rounded-xl bg-background border border-white/10 text-white focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none placeholder:text-slate-600"
+                  className="w-full px-5 py-4 rounded-xl bg-background border border-gray-300 text-secondary focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none placeholder:text-gray-400"
                   placeholder="Tell me about your project..."
                   disabled={isSubmitting}
                 ></textarea>

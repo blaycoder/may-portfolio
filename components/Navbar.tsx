@@ -24,13 +24,13 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/80 backdrop-blur-md border-b border-white/5 py-3' : 'bg-transparent py-6'
+        isScrolled ? 'bg-background/95 backdrop-blur-md border-b border-gray-200 py-3 shadow-sm' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2 text-white font-heading font-bold text-xl tracking-tight hover:text-primary transition-colors">
+            <a href="#" className="flex items-center gap-2 text-secondary font-heading font-bold text-xl tracking-tight hover:text-primary transition-colors">
               <VideoIcon size={28} className="text-primary" />
               <span>May</span>
             </a>
@@ -64,14 +64,14 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-surface border-b border-white/10 absolute w-full">
+        <div className="md:hidden bg-surface border-b border-gray-200 absolute w-full shadow-lg">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-3 rounded-md text-base font-medium text-secondary hover:text-primary hover:bg-white/5 w-full text-center"
+                className="block px-3 py-3 rounded-md text-base font-medium text-secondary hover:text-primary hover:bg-gray-50 w-full text-center"
               >
                 {link.name}
               </a>

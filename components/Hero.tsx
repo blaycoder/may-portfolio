@@ -71,8 +71,8 @@ const Hero: React.FC = () => {
       className="relative min-h-screen flex items-center justify-center bg-background pt-12 lg:pt-20 pb-12 overflow-hidden"
     >
       {/* Background Gradient Blob */}
-      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
-      <div className="absolute bottom-[-20%] right-[-10%] w-[40%] h-[40%] bg-accent/10 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-primary/10 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute bottom-[-20%] right-[-10%] w-[40%] h-[40%] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
@@ -93,21 +93,21 @@ const Hero: React.FC = () => {
               {PERSONAL_INFO.role}
             </h2>
 
-            <p className="hero-desc text-lg text-slate-400 mb-10 max-w-xl leading-relaxed font-light">
+            <p className="hero-desc text-lg text-muted mb-10 max-w-xl leading-relaxed font-light">
               A strategic and results-driven Communications professional with a proven track record in shaping brand narratives, enhancing stakeholder engagement, and executing targeted communication strategies.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a
                 href="#experience"
-                className="hero-btn group inline-flex items-center justify-center px-8 py-4 text-base font-bold font-heading rounded-full text-white bg-primary hover:bg-primaryDark transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]"
+                className="hero-btn group inline-flex items-center justify-center px-8 py-4 text-base font-bold font-heading rounded-full text-white bg-primary hover:bg-primaryDark transition-all shadow-[0_0_20px_rgba(128,0,32,0.3)] hover:shadow-[0_0_30px_rgba(128,0,32,0.5)]"
               >
                 View Experience
                 <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
               </a>
               <a
                 href="#contact"
-                className="hero-btn inline-flex items-center justify-center px-8 py-4 text-base font-bold font-heading rounded-full text-secondary bg-transparent border border-white/20 hover:bg-white/5 hover:border-white/40 transition-all"
+                className="hero-btn inline-flex items-center justify-center px-8 py-4 text-base font-bold font-heading rounded-full text-secondary bg-transparent border-2 border-primary/30 hover:bg-primary/5 hover:border-primary transition-all"
               >
                 Get In Touch
                 <FileText className="ml-2 h-4 w-4" />
@@ -115,13 +115,12 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column: Image Placeholder */}
-           {/* Right Column: Image */}
+          {/* Right Column: Image */}
           <div className="hero-image order-1 lg:order-2 flex justify-center lg:justify-end relative">
             {/* Decorative circle behind image */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-white/5 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-primary/5 rounded-full blur-3xl -z-10"></div>
 
-            <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[450px] lg:h-[550px] rounded-3xl overflow-hidden border border-white/10 shadow-2xl group">
+            <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[450px] lg:h-[550px] rounded-3xl overflow-hidden border-2 border-gray-200 shadow-2xl group">
               <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500"></div>
 
               <img
@@ -130,10 +129,10 @@ const Hero: React.FC = () => {
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out transform hover:scale-105"
               />
 
-              <div className="absolute bottom-10 left-5 bg-surface p-4 rounded-xl border border-white/10 shadow-xl md:block">
+              <div className="absolute bottom-10 left-5 bg-surface p-4 rounded-xl border border-gray-200 shadow-xl md:block">
                 <div className="flex items-center gap-3">
                   <div className="h-3 w-3 rounded-full bg-green-500 animate-pulse"></div>
-                  <span className="text-sm font-bold text-slate-300">
+                  <span className="text-sm font-bold text-secondary">
                     Open to work
                   </span>
                 </div>

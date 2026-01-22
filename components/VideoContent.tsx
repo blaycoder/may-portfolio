@@ -68,7 +68,7 @@ const VideoContent: React.FC = () => {
   }, []);
 
   return (
-    <section id="video" ref={sectionRef} className="py-24 bg-background border-t border-white/5">
+    <section id="video" ref={sectionRef} className="py-24 bg-background border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-4">Script Writing & Video Content</h2>
@@ -81,17 +81,17 @@ const VideoContent: React.FC = () => {
           {VIDEO_CONTENT.map((item) => (
             <div
               key={item.id}
-              className="video-card bg-surface p-6 rounded-2xl border border-white/5 hover:border-primary/30 transition-all duration-300"
+              className="video-card bg-surface p-6 rounded-2xl border border-gray-200 hover:border-primary/30 transition-all duration-300"
             >
               <div className="mb-4">
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-xs font-bold text-primary uppercase tracking-wider bg-primary/10 px-3 py-1 rounded-full">
                     {item.platform}
                   </span>
-                  <span className="text-xs text-slate-400 font-medium">{item.role}</span>
+                  <span className="text-xs text-muted font-medium">{item.role}</span>
                 </div>
                 <h3 className="text-xl font-bold text-secondary mb-2">{item.title}</h3>
-                <p className="text-slate-400 text-sm mb-4">{item.purpose}</p>
+                <p className="text-muted text-sm mb-4">{item.purpose}</p>
               </div>
 
               {/* Instagram Embed */}
@@ -109,7 +109,7 @@ const VideoContent: React.FC = () => {
 
               {/* LinkedIn Link */}
               {item.platform === 'LinkedIn' && item.link && (
-                <div className="mb-4 p-6 bg-background/50 rounded-xl border border-white/5 flex items-center justify-center">
+                <div className="mb-4 p-6 bg-gray-50 rounded-xl border border-gray-200 flex items-center justify-center">
                   <a
                     href={item.link}
                     target="_blank"
