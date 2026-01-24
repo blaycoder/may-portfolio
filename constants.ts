@@ -79,7 +79,7 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     id: 3,
-    role: "Marketing Intern",
+    role: "Graduate Trainee",
     company: "Charterhouse Lagos",
     period: "April 2023 - April 2024",
     description: [
