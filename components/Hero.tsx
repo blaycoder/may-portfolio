@@ -121,12 +121,12 @@ const Hero: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-primary/5 rounded-full blur-3xl -z-10"></div>
 
             <div className="relative w-64 h-64 md:w-96 md:h-96 lg:w-[450px] lg:h-[550px] rounded-3xl overflow-hidden border-2 border-gray-200 shadow-2xl group">
-              <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10 group-hover:bg-transparent transition-colors duration-500"></div>
+              <div className="absolute inset-0  z-10 group-hover:bg-transparent transition-colors duration-500"></div>
 
               <img
                 src={profilePic}
                 alt="May Nwokoro"
-                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out transform hover:scale-105"
+                className="w-full h-full object-cover transition-all duration-700 ease-in-out transform hover:scale-105"
               />
 
               <div className="absolute bottom-10 left-5 bg-surface p-4 rounded-xl border border-gray-200 shadow-xl md:block">

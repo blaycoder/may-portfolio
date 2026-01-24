@@ -189,7 +189,7 @@ export const VIDEO_CONTENT: VideoContentItem[] = [
   },
   {
     id: 4,
-    title: "Open Day Highlights with Eva",
+    title: "Open Day Highlights with Ava",
     role: "Script Writer/Video Editor",
     purpose: "To capture the excitement of the open day",
     platform: "Instagram",

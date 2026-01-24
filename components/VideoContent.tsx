@@ -73,7 +73,7 @@ const VideoContent: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-4 text-white">Script Writing & Video Content</h2>
           <p className="text-white/80 text-lg max-w-2xl mx-auto">
-            As a Communications Specialist, I develop parent communication emails, newsletters, press releases, and video scripts that strengthen engagement with current parents while strategically attracting prospective families to the school.
+           As a Communications Specialist, I craft compelling scripts and video content that translate institutional stories into clear, engaging narratives. I am a strong storyteller, skilled at turning real moments and experiences into purposeful content that builds trust, drives engagement, and supports brand growth.
           </p>
         </div>
 
