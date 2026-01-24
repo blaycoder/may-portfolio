@@ -24,14 +24,14 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-md border-b border-gray-200 py-3 shadow-sm' : 'bg-transparent py-6'
+        isScrolled ? 'bg-primary backdrop-blur-md border-b border-gray-200 py-3 shadow-sm' : 'bg-primary py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="flex items-center gap-2 text-secondary font-heading font-bold text-xl tracking-tight hover:text-primary transition-colors">
-              <VideoIcon size={28} className="text-primary" />
+            <a href="#" className="flex items-center gap-2 text-white font-heading font-bold text-xl tracking-tight hover:text-primary transition-colors">
+              <VideoIcon size={28} className="text-white" />
               <span>May</span>
             </a>
           </div>
@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-muted hover:text-primary transition-colors duration-200 font-medium text-sm uppercase tracking-wider"
+                className="text-white hover:text-primary transition-colors duration-200 font-medium text-sm uppercase tracking-wider"
               >
                 {link.name}
               </a>

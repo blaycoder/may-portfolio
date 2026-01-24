@@ -68,11 +68,11 @@ const VideoContent: React.FC = () => {
   }, []);
 
   return (
-    <section id="video" ref={sectionRef} className="py-24 bg-background border-t border-gray-200">
+    <section id="video" ref={sectionRef} className="py-24 bg-primary border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-4">Script Writing & Video Content</h2>
-          <p className="text-muted text-lg max-w-2xl mx-auto">
+          <h2 className="font-heading text-4xl md:text-5xl font-bold text-secondary mb-4 text-white">Script Writing & Video Content</h2>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">
             As a Communications Specialist, I develop parent communication emails, newsletters, press releases, and video scripts that strengthen engagement with current parents while strategically attracting prospective families to the school.
           </p>
         </div>

@@ -99,7 +99,7 @@ const PressPortfolio: React.FC = () => {
                       Press Release
                     </span>
                   </div>
-                  <h4 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors line-clamp-2">
+                  <h4 className="text-xl font-bold text-secondary mb-3 group-hover:text-pink transition-colors line-clamp-2">
                     {item.title}
                   </h4>
                   <div className="space-y-2 mb-4">
@@ -149,7 +149,7 @@ const PressPortfolio: React.FC = () => {
                       Newsletter
                     </span>
                   </div>
-                  <h4 className="text-xl font-bold text-secondary mb-3 group-hover:text-accent transition-colors line-clamp-2">
+                  <h4 className="text-xl font-bold text-secondary mb-3 group-hover:text-pink transition-colors line-clamp-2">
                     {item.title}
                   </h4>
                   <div className="space-y-2 mb-4">
